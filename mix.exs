@@ -1,7 +1,7 @@
 defmodule Ueberauth.Facebook.Mixfile do
   use Mix.Project
 
-  @version "0.8.1"
+  @version "0.8.2"
   @url "https://github.com/ChannexIO/ueberauth_facebook"
 
   def project do
