@@ -1,5 +1,11 @@
-## v0.7.0 (Unreleased)
+# v 0.8.3
+* Hardcode host as https
+
+# v 0.8.2
 * Support token-based workflow
+
+# v 0.8.1
+* Last source repo release
 
 # v 0.6.0
 
