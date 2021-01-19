@@ -246,7 +246,10 @@ defmodule Ueberauth.Strategy.Facebook do
   end
 
   defp oauth_client_options_from_conn(conn) do
-    base_options = [redirect_uri: callback_url(conn)]
+    base_options = [
+      redirect_uri: conn |> callback_url() |> String.replace_leading("http://", "https://")
+    ]
+
     request_options = conn.private[:ueberauth_request_options].options
 
     case {request_options[:client_id], request_options[:client_secret]} do
