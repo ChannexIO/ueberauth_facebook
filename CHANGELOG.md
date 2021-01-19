@@ -1,3 +1,6 @@
+# v 0.8.4
+* Fix mistake with http and https at Facebook connection
+
 # v 0.8.3
 * Hardcode host as https
 
