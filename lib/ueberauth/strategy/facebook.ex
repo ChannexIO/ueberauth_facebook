@@ -75,9 +75,6 @@ defmodule Ueberauth.Strategy.Facebook do
     end
   end
 
-  @doc """
-  Handles the callback from app with access_token.
-  """
   def handle_callback!(%Plug.Conn{params: %{"id_token" => access_token}} = conn) do
     opts = oauth_client_options_from_conn(conn)
 
@@ -96,7 +93,6 @@ defmodule Ueberauth.Strategy.Facebook do
     end
   end
 
-  @doc false
   def handle_callback!(conn) do
     set_errors!(conn, [error("missing_code", "No code received")])
   end
